@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Barebones</title>
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/moon.css" id="theme">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h1>ModKeeper </h1>
+					<h2>Progress Report</h2>
+					<h3 class="date">June 22, 2018</h3>
+				</section>
+
+				<section>
+					<h2>Milestones reached</h2>
+					<ul class="good">
+						<li>Created database schema</li>
+						<li>Created an Appengine instance, CloudSQL instance, and a Cloud storage bucket</li>
+						<li>Implemented schema within CloudSQL</li>
+						<li>Implemented backend API to populate the database</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Milestones to Accomplish</h2>
+					<ul class="bad">
+						<li>Complete the back end API implementation for all endpoints (Module)</li>
+						<li>Implement Module upload and download</li>
+						<li>Create MVP application (minimal front end)</li>
+						<li>Front end design and application features</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Problems and solutions</h2>
+				</section>
+
+				<section>
+					<h2>GORM</h2>
+					<p class="left">Use: Tool to simplify SQL implementations by using an object oriented model</p>
+					<p class="left good">Benefits</p>
+					<ul class="list">
+						<li>Easier to maintain over time</li>
+						<li>Simplicity in data abstraction</li>
+					</ul>
+					<p class="left bad">Issues</p>
+					<ul class="list">
+						<li>Easier to maintain over time</li>
+						<li>Simplicity in data abstraction</li>
+					</ul>
+					<p class="left white small">Solution: Native Golang SQL library</p>
+				</section>
+
+				<section>
+					<h2>Mock DB</h2>
+					<p class="left">Use: Mimic a database connection for testing database dependent functions</p>
+					<p class="left good">Benefits</p>
+					<ul class="list">
+						<li>Reliable implementation of a database connection</li>
+					</ul>
+					<p class="left bad">Issues</p>
+					<ul class="list">
+						<li>Would not accurately function like the Modkeeper database</li>
+					</ul>
+					<p class="left white small">Solution: Working on finding a solution to test the granular database dependent functions</p>
+				</section>
+
+				<section>
+					<h2>Coding Demo</h2>
+					<ul>
+						<li>CRUD on owner</li>
+						<li>CRUD on namespace</li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize();
+
+		</script>
+
+	</body>
+</html>

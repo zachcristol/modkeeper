@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js - Barebones</title>
+
+		<link rel="stylesheet" href="../../css/reveal.css">
+		<link rel="stylesheet" href="../../css/theme/moon.css" id="theme">
+		<!-- <link rel="stylesheet" href="../../css/print/pdf.css" id="theme"> -->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section>
+					<h1>ModKeeper </h1>
+					<h2>Readout</h2>
+					<h3 class="date">June 28, 2018</h3>
+				</section>
+
+				<section>
+					<h2>About Us</h2>
+					<h4>Zach Cristol - Alex Valdez</h4>
+					<!-- UT ATM thing -->
+				</section>
+
+				<section>
+					<h2>Project Description</h2>
+					<ul>
+						<li>Goal: provide easier path to bring internal applications to the cloud</li>
+						<li>Creating repository of modules for configurable cloud infrastructures</li>
+						<li>Infrastructure as a service (iaas): Provide a simple abstraction to create a suite of infrastructure</li>
+					</ul>
+				</section>
+
+
+				<section>
+					<h2>Use Case</h2>
+					<ul style="font-size: 38px">
+						<li>There is a team that is creating an app or has an app on prem</li>
+						<li>The team sees benifits of cloud applications (flexible cost, highly configurable, high reliability, high mobility)</li>
+						<li>When the team needs to set up a suite of infrastructure (Cloud Endpoints, Appengine, Cloud SQL, Storage Bucket), they can dictate the configuration of the infrastructure in the form of a module.</li>
+						<li>These modules (configurations) can then be stored on our application and be used and tweaked for others to use</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Buisness Values</h2>
+						<ul>
+							<li>Deploy to cloud without the headache</li>
+							<li>Have developers spend less time on the command line and more time in code</li>
+							<li>Simple, repeatable, configurable: Creating a rich community of module creators and users for internal developers</li>
+							<li>We ARE a use case (Cloud Endpoints, Appengine, Cloud SQL, Storage Bucket)</li>
+						</ul>
+				</section>
+
+
+				<section>
+					<h2>Milestones reached</h2>
+					<ul class="good">
+						<li>Created database schema</li>
+						<li>Created an Appengine instance, CloudSQL instance, and a Cloud storage bucket</li>
+						<li>Implemented schema within CloudSQL</li>
+						<li>Implemented backend API to populate the database</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Milestones to Accomplish</h2>
+					<ul class="bad">
+						<li>Complete the back end API implementation for all endpoints (Module)</li>
+						<li>Implement Module upload and download</li>
+						<li>Create MVP application</li>
+						<li>Front end design and application features</li>
+					</ul>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="../../js/reveal.js"></script>
+
+		<script>
+
+			Reveal.initialize();
+
+		</script>
+
+	</body>
+</html>
